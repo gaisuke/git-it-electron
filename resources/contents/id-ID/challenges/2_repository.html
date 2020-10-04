@@ -1,74 +1,59 @@
 <div id="challenge-desc" class="chal-goal blue-border border-box">
-    <p>Create a new repository on your computer.</p>
+    <p>Buat repositori baru di komputermu.</p>
 </div>
 
 <div class="chal-background light-blue solid-box">
-    <h2> Repositories</h2>
-    <p>A <strong>repository</strong> is a collection of related items. In our case, when writing software, it is a
-        collection of files related to a software project. You can imagine it as a project folder with all the relevant
-        files inside of it. In fact, that's what it will look like on your computer anyways. Sometimes they're called
-        "repos" for short.</p>
+    <h2> Repositori</h2>
+    <p>Sebuah <strong>repositori</strong> adalah kumpulan dari beberapa item yang berkaitan. Dalam kasus ini, saat menulis aplikasi, itu adalah kumpulan dari beberapa file yang berkaitan dengan projek aplikasinya. Kamu bisa membayangkannya seperti sebuah folder projek dengan semua file yang berkaitan didalamnya. Faktanya, itu sama saja seperti yang terlihat di komputermu. Kadang disebut juga sebagai "repos" untuk singkatnya.</p>
 
     <img src="../../../assets/imgs/repos.png" alt="A drawing of four file folders" width="600">
 
-    <p>You tell Git what your project is and Git will start tracking all of the changes to that folder. This makes it a
-        Git repository: a folder of items being tracked by Git. Git tracks when files are added, subtracted or even a
-        single letter in a single file is changed. All of this plus who did it and when is tracked by Git. In software,
-        tracking changes like this is called <strong>version control</strong>.</p>
+    <p>Kamu memberi tahu Git yang mana projekmu dan Git akan mulai memantau segala perubahan yang terjadi di folder itu. Ini menjadikannya sebuah repositori Git: sebuah folder yang dipantau oleh Git. Git memantau saat ada file ditambahkan, dikurangi, atau bahkan sebuah huruf di sebuah file dirubah. Semua ini ditambah dengan siapa yang melakukannya dan kapan dilakukannya juga dipantau oleh Git. Dalam sebuah aplikasi,
+        pemantauan perubahan seperti ini disebut <strong>kontrol versi</strong>.</p>
 
-    <h2>Using Terminal</h2>
-    <p><strong>Terminal</strong> (or Bash) is a way to instruct your computer to do things by typing commands rather
-        than clicking applications with your mouse. You can rename files, open files, create new folders, move between
-        directories (folders) and more all by running typed commands. You can even use a text editor for code (like <a
-                href="http://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank"> Vim</a>) in your terminal and
-        never have to leave!</p>
+    <h2>Menggunakan Terminal</h2>
+    <p><strong>Terminal</strong> (atau Bash) adalah sebuah cara untuk memerintahkan komputermu melakukan hal dengan mengetikkan perintah daripada mengeklik aplikasi dengan menggunakan mouse milikmu. Kamu dapat mengubah nama file, membuka file, membuat folder baru, pindah ke lain direktori (folder) dan lain sebagainya hanya dengan mengetikkan perintah. Kamu bahkan bisa menggunakan pengedit teks untuk koding (seperti <a
+                href="http://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank"> Vim</a>) di dalam terminal dan tanpa harus meninggalkanny!</p>
 
-    <p>Besides navigating your computer, you can also use programs in Terminal that have a <strong>command-line
-        interface (CLI)</strong>, meaning they can be run with commands in terminal. Git is one of these. The first part
-        of the command lets your computer know you're talking to Git. The parts following that are the commands and the
-        different options you want Git to act on.</p>
+    <p>Selain memerintah komputermu, kamu juga bisa menggunakan program di Terminal yang mempunyai <strong>Antarmuka Baris Perintah (Command-Line Interface, CLI)</strong>, yang artinya dapat dijalankan dengan perintah di terminal. Git adalah salah satunya. Bagian pertama dari perintahnya memberi tahu komputermu bahwa kamu sedang berinteraksi dengan Git. Lalu bagian selanjutnya adalah perintahnya dan berbagai macam pilihan yang kamu inginkan dari Git untuk bekerja.</p>
 
-    <p>In Git-it you'll learn a few basic command-line actions (in addition to Git commands) for navigating your
-        computer; they're described within the steps.</p>
+    <p>Di Git-it kamu akan belajar beberapa aksi baris perintah yang dasar (sebagai tambahan dari perintah Git) untuk mengoperasikan komputer milikmu; semuanya dijelaskan dalam bagian-per-bagian.</p>
 </div>
 
 <div class="chal-step blue-border border-box">
-    <h3>Create a Repository</h3>
-    <p>You're going to create a new project folder and then initialize it as a Git repository. We'll name the folder 'hello-world'
-      in this challenge, but you can choose a different name if you already have a folder named this (it's a common first project name).</p>
+    <h3>Membuat Repositori</h3>
+    <p>Kamu akan membuat sebuah folder projek baru dan menjadikannya sebagai repositori Git. Di tantangan ini kita akan menamai foldernya 'hello-world', tapi kamu boleh memberi nama lain jika kamu sudah punya folder dengan nama ini (karena sudah biasa menjadi nama projek pertama).</p>
 
-    <p>Time to open your terminal!
+    <p>Saatnya buka terminal milikmu!
     <p>
 
-    <p>In your terminal window, type these commands, one at a time, pressing enter/return after each.</p>
+    <p>Di terminal, ketikkan perintah berikut, satu persatu setiap barisnya, lalu tekan enter.</p>
 
-    <p>First, make a new folder:<br><span class="inline-tip">Tip: mkdir stands for <em>make directory</em></span></p>
+    <p>Pertama, membuat folder baru:<br><span class="inline-tip">Tip: mkdir kependekan dari <em>make directory (buat direktori)</em></span></p>
     <code class="shell">mkdir hello-world</code>
 
-    <p>Then go into that folder:<br><span class="inline-tip">Tip: cd stands for <em>change directory</em></span></p>
+    <p>Lalu masuk ke folder itu:<br><span class="inline-tip">Tip: cd kependekan dari <em>change directory (pindah direktori)</em></span></p>
     <code class="shell">cd hello-world</code>
 
-    <p>Finally, tell Git to initialize (start tracking) the folder you are now in:</p>
+    <p>Terakhir, beri tahu Git untuk memulai (mulai memantau) folder yang kamu sedang didalamnya ini:</p>
     <code class="shell">git init</code>
 
-    <p>The last command should return something starting with "Initialized empty Git repository". The others commands do
-        not return anything.</p>
+    <p>Perintah terakhir harusnya mengembalikan sebuah pesan seperti ini "Initialized empty Git repository". Perintah yang lainnya tidak mengembalikan pesan apapun.</p>
 
-    <p>You did it! If you want to be double-sure that it's a Git repository, type <code>git status</code> and if it
-        doesn't return 'fatal: Not a git repository...', you're golden!</p>
+    <p>Kamu berhasil! Jika kamu mau tahu dan benar-benar yakin itu sudah jadi repositori Git, maka ketikkan <code>git status</code> dan jika TIDAK mengembalikan pesan 'fatal: Not a git repository...', kamu Berhasil!</p>
 </div>
 
 {{{ verify_directory_button }}}
 
 <div class="chal-tip grey-border border-box">
     <ul class="no-list-style">
-        <li><strong>Make a new folder (aka make directory)</strong></li>
-        <code class="shell">mkdir &#60;FOLDERNAME&#62;</code>
-        <li><strong>Navigate into an existing folder (aka change directory)</strong></li>
-        <code class="shell">cd &#60;FOLDERNAME&#62;</code>
-        <li><strong>List the items in a folder</strong></li>
+        <li><strong>Buat folder baru (alias buat direktori)</strong></li>
+        <code class="shell">mkdir &#60;NAMAFOLDER&#62;</code>
+        <li><strong>Pindah ke folder dimaksud (alias pindah direktori)</strong></li>
+        <code class="shell">cd &#60;NAMAFOLDER&#62;</code>
+        <li><strong>Munculkan apa saja yang ada didalam folder</strong></li>
         <code class="shell">ls </code>
-        <li><strong>Turn Git on for a folder</strong></li>
+        <li><strong>Memulai Git pada sebuah folder</strong></li>
         <code class="shell">git init</code>
     </ul>
 </div>
